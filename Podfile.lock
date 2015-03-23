@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - pop (1.0.7)
+  - WYPopoverController (0.3.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
   - pop (~> 1.0.7)
+  - WYPopoverController (~> 0.3.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  WYPopoverController: 211e8e4d5178175cc8089cf754dd8631f819d0d1
 
 COCOAPODS: 0.35.0
