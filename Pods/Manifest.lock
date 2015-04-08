@@ -21,16 +21,25 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - pop (1.0.7)
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
+    - ReactiveCocoa/Core
   - WYPopoverController (0.3.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
   - pop (~> 1.0.7)
+  - ReactiveCocoa (~> 2.4.7)
   - WYPopoverController (~> 0.3.7)
 
 SPEC CHECKSUMS:
-  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
-  pop: 2f14a1ea61339767af9e66741b418c831b3844df
-  WYPopoverController: 211e8e4d5178175cc8089cf754dd8631f819d0d1
+  AFNetworking: 10e85a00bb0f475124e4ff2677bf15693b2c1523
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
+  WYPopoverController: ebefa50c477bdbbd9dc992dfdffafa168c4484eb
 
 COCOAPODS: 0.35.0

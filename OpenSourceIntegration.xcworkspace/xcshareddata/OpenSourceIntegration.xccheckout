@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4F89C4E7-7BBF-4BB7-A588-8A0B1589813D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OpenSourceIntegration</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DB80C41C94B142D3C862294D5F5184265AA88C20</key>
+		<string>https://github.com/tennysondy/open-sources-integration.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OpenSourceIntegration.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DB80C41C94B142D3C862294D5F5184265AA88C20</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tennysondy/open-sources-integration.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DB80C41C94B142D3C862294D5F5184265AA88C20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DB80C41C94B142D3C862294D5F5184265AA88C20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenSourceIntegration</string>
+		</dict>
+	</array>
+</dict>
+</plist>

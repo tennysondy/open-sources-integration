@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "WYPopoverController.h"
 #import "WYStoryboardPopoverSegue.h"
+#import "RiskHintView.h"
+#import "PopoverArrowView.h"
 
 @interface ViewController () <WYPopoverControllerDelegate>
 {
@@ -24,8 +26,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    
+    CGRect rect = [UIScreen mainScreen].bounds;
+    RiskHintView *rhv = [[RiskHintView alloc] initWithFrame:CGRectMake(0, 200, CGRectGetWidth(rect), 23)];
+    [self.view addSubview:rhv];
+    PopoverArrowView *poav = [[PopoverArrowView alloc] initWithFrame:CGRectMake(20, 50, 200, 40)];
+    poav.popoverPoint = CGPointMake(100, 35);
+    poav.arrowDirection = DYArrowDirectionDown;
+    [self.view addSubview:poav];
 }
 
 - (void)viewDidAppear:(BOOL)animated

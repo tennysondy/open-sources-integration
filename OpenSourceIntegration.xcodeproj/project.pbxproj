@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FA183251ACBA40700128793 /* PopoverArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA183241ACBA40700128793 /* PopoverArrowView.m */; };
+		6FB12C551AC048FC00A0CCC7 /* RiskHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB12C541AC048FC00A0CCC7 /* RiskHintView.m */; };
 		6FD6F8541AA55C0A001F012B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8531AA55C0A001F012B /* main.m */; };
 		6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8561AA55C0A001F012B /* AppDelegate.m */; };
 		6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8581AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld */; };
@@ -31,6 +33,10 @@
 /* Begin PBXFileReference section */
 		2042A41782B3BF04DE63489A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		329C8D9F2B9AFEFB3C76055A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6FA183231ACBA40700128793 /* PopoverArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverArrowView.h; sourceTree = "<group>"; };
+		6FA183241ACBA40700128793 /* PopoverArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverArrowView.m; sourceTree = "<group>"; };
+		6FB12C531AC048FC00A0CCC7 /* RiskHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskHintView.h; sourceTree = "<group>"; };
+		6FB12C541AC048FC00A0CCC7 /* RiskHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskHintView.m; sourceTree = "<group>"; };
 		6FD6F84E1AA55C0A001F012B /* OpenSourceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSourceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6F8521AA55C0A001F012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD6F8531AA55C0A001F012B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +117,10 @@
 				6FD6F8561AA55C0A001F012B /* AppDelegate.m */,
 				6FD6F85B1AA55C0A001F012B /* ViewController.h */,
 				6FD6F85C1AA55C0A001F012B /* ViewController.m */,
+				6FB12C531AC048FC00A0CCC7 /* RiskHintView.h */,
+				6FB12C541AC048FC00A0CCC7 /* RiskHintView.m */,
+				6FA183231ACBA40700128793 /* PopoverArrowView.h */,
+				6FA183241ACBA40700128793 /* PopoverArrowView.m */,
 				6FD6F85E1AA55C0A001F012B /* Main.storyboard */,
 				6FD6F8611AA55C0A001F012B /* Images.xcassets */,
 				6FD6F8631AA55C0A001F012B /* LaunchScreen.xib */,
@@ -285,6 +295,8 @@
 				6FD6F8541AA55C0A001F012B /* main.m in Sources */,
 				6FD6F85D1AA55C0A001F012B /* ViewController.m in Sources */,
 				6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */,
+				6FA183251ACBA40700128793 /* PopoverArrowView.m in Sources */,
+				6FB12C551AC048FC00A0CCC7 /* RiskHintView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
