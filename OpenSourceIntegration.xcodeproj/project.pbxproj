@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FA183251ACBA40700128793 /* PopoverArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA183241ACBA40700128793 /* PopoverArrowView.m */; };
-		6FB12C551AC048FC00A0CCC7 /* RiskHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB12C541AC048FC00A0CCC7 /* RiskHintView.m */; };
+		6FB0DE781AD52B5A0027C955 /* DYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */; };
+		6FB0DE7B1AD52BB90027C955 /* DYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7A1AD52BB90027C955 /* DYLoginViewController.m */; };
+		6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */; };
+		6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */; };
 		6FD6F8541AA55C0A001F012B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8531AA55C0A001F012B /* main.m */; };
 		6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8561AA55C0A001F012B /* AppDelegate.m */; };
 		6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8581AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld */; };
-		6FD6F85D1AA55C0A001F012B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F85C1AA55C0A001F012B /* ViewController.m */; };
 		6FD6F8601AA55C0A001F012B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F85E1AA55C0A001F012B /* Main.storyboard */; };
 		6FD6F8621AA55C0A001F012B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F8611AA55C0A001F012B /* Images.xcassets */; };
 		6FD6F8651AA55C0A001F012B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F8631AA55C0A001F012B /* LaunchScreen.xib */; };
@@ -33,18 +34,20 @@
 /* Begin PBXFileReference section */
 		2042A41782B3BF04DE63489A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		329C8D9F2B9AFEFB3C76055A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6FA183231ACBA40700128793 /* PopoverArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverArrowView.h; sourceTree = "<group>"; };
-		6FA183241ACBA40700128793 /* PopoverArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverArrowView.m; sourceTree = "<group>"; };
-		6FB12C531AC048FC00A0CCC7 /* RiskHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiskHintView.h; sourceTree = "<group>"; };
-		6FB12C541AC048FC00A0CCC7 /* RiskHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiskHintView.m; sourceTree = "<group>"; };
+		6FB0DE761AD52B5A0027C955 /* DYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYMainViewController.h; path = CommonSuperClass/DYMainViewController.h; sourceTree = "<group>"; };
+		6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYMainViewController.m; path = CommonSuperClass/DYMainViewController.m; sourceTree = "<group>"; };
+		6FB0DE791AD52BB90027C955 /* DYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLoginViewController.h; path = LoginViewController/DYLoginViewController.h; sourceTree = "<group>"; };
+		6FB0DE7A1AD52BB90027C955 /* DYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYLoginViewController.m; path = LoginViewController/DYLoginViewController.m; sourceTree = "<group>"; };
+		6FB0DE7E1AD55C860027C955 /* DYMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYMainTableViewCell.h; path = CommonSuperClass/DYMainTableViewCell.h; sourceTree = "<group>"; };
+		6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYMainTableViewCell.m; path = CommonSuperClass/DYMainTableViewCell.m; sourceTree = "<group>"; };
+		6FB0DE811AD55CE80027C955 /* DYLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLoginTableViewCell.h; path = LoginViewController/DYLoginTableViewCell.h; sourceTree = "<group>"; };
+		6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYLoginTableViewCell.m; path = LoginViewController/DYLoginTableViewCell.m; sourceTree = "<group>"; };
 		6FD6F84E1AA55C0A001F012B /* OpenSourceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSourceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6F8521AA55C0A001F012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD6F8531AA55C0A001F012B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FD6F8551AA55C0A001F012B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FD6F8561AA55C0A001F012B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6FD6F8591AA55C0A001F012B /* OpenSourceIntegration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenSourceIntegration.xcdatamodel; sourceTree = "<group>"; };
-		6FD6F85B1AA55C0A001F012B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6FD6F85C1AA55C0A001F012B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6FD6F85F1AA55C0A001F012B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FD6F8611AA55C0A001F012B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6FD6F8641AA55C0A001F012B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -90,6 +93,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6FB0DE7C1AD55C440027C955 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				6FB0DE791AD52BB90027C955 /* DYLoginViewController.h */,
+				6FB0DE7A1AD52BB90027C955 /* DYLoginViewController.m */,
+				6FB0DE811AD55CE80027C955 /* DYLoginTableViewCell.h */,
+				6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
+		6FB0DE7D1AD55C550027C955 /* CommonSuperClass */ = {
+			isa = PBXGroup;
+			children = (
+				6FB0DE761AD52B5A0027C955 /* DYMainViewController.h */,
+				6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */,
+				6FB0DE7E1AD55C860027C955 /* DYMainTableViewCell.h */,
+				6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */,
+			);
+			name = CommonSuperClass;
+			sourceTree = "<group>";
+		};
 		6FD6F8451AA55C0A001F012B = {
 			isa = PBXGroup;
 			children = (
@@ -115,12 +140,8 @@
 			children = (
 				6FD6F8551AA55C0A001F012B /* AppDelegate.h */,
 				6FD6F8561AA55C0A001F012B /* AppDelegate.m */,
-				6FD6F85B1AA55C0A001F012B /* ViewController.h */,
-				6FD6F85C1AA55C0A001F012B /* ViewController.m */,
-				6FB12C531AC048FC00A0CCC7 /* RiskHintView.h */,
-				6FB12C541AC048FC00A0CCC7 /* RiskHintView.m */,
-				6FA183231ACBA40700128793 /* PopoverArrowView.h */,
-				6FA183241ACBA40700128793 /* PopoverArrowView.m */,
+				6FB0DE7D1AD55C550027C955 /* CommonSuperClass */,
+				6FB0DE7C1AD55C440027C955 /* LoginView */,
 				6FD6F85E1AA55C0A001F012B /* Main.storyboard */,
 				6FD6F8611AA55C0A001F012B /* Images.xcassets */,
 				6FD6F8631AA55C0A001F012B /* LaunchScreen.xib */,
@@ -292,11 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */,
+				6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */,
+				6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */,
 				6FD6F8541AA55C0A001F012B /* main.m in Sources */,
-				6FD6F85D1AA55C0A001F012B /* ViewController.m in Sources */,
 				6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */,
-				6FA183251ACBA40700128793 /* PopoverArrowView.m in Sources */,
-				6FB12C551AC048FC00A0CCC7 /* RiskHintView.m in Sources */,
+				6FB0DE781AD52B5A0027C955 /* DYMainViewController.m in Sources */,
+				6FB0DE7B1AD52BB90027C955 /* DYLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,48 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="N26-AA-KAQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="JQZ-8k-cdx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="N26-AA-KAQ" customClass="DYLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Bx3-vS-eCY"/>
+                        <viewControllerLayoutGuide type="bottom" id="23n-bn-Pza"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="4GO-Oa-I5B">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5n-PV-6zy">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9od-B8-bgj">
+                                <rect key="frame" x="20" y="100" width="560" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="2Z8-cB-wbj"/>
-                                    <constraint firstAttribute="height" constant="30" id="rv9-ov-Ii1"/>
+                                    <constraint firstAttribute="height" constant="100" id="iXo-Bt-X6K"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InputTextField" id="9LI-xd-DVU" customClass="DYLoginTableViewCell">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9LI-xd-DVU" id="PZK-6M-Ljr">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XYN-OI-bFa" userLabel="输入框">
+                                                    <rect key="frame" x="80" y="0.0" width="500" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="OQA-MX-34t"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="OQA-MX-34t"/>
+                                                        </mask>
+                                                    </variation>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YAY-zf-N4n">
+                                                    <rect key="frame" x="15" y="-3" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="UTi-3h-GEc"/>
+                                                        <constraint firstAttribute="height" constant="50" id="kRM-Ao-nWF"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="XYN-OI-bFa" secondAttribute="bottom" id="2QW-g1-P5r"/>
+                                                <constraint firstItem="YAY-zf-N4n" firstAttribute="leading" secondItem="PZK-6M-Ljr" secondAttribute="leading" constant="15" id="8la-TV-rc7"/>
+                                                <constraint firstItem="XYN-OI-bFa" firstAttribute="leading" secondItem="YAY-zf-N4n" secondAttribute="trailing" constant="15" id="CIa-f1-jkU"/>
+                                                <constraint firstAttribute="centerY" secondItem="YAY-zf-N4n" secondAttribute="centerY" id="Drd-Fz-tsE"/>
+                                                <constraint firstAttribute="trailing" secondItem="XYN-OI-bFa" secondAttribute="trailing" constant="20" id="EMY-Wb-Dcr"/>
+                                                <constraint firstItem="XYN-OI-bFa" firstAttribute="top" secondItem="PZK-6M-Ljr" secondAttribute="top" id="gsw-03-4Kb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="inputImageView" destination="YAY-zf-N4n" id="qpi-kU-0Ka"/>
+                                            <outlet property="inputTextField" destination="XYN-OI-bFa" id="Dnl-Ng-vdb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="N26-AA-KAQ" id="UaS-d6-EuO"/>
+                                    <outlet property="delegate" destination="N26-AA-KAQ" id="sPd-zn-8qq"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTV-8I-m23" userLabel="登录">
+                                <rect key="frame" x="20" y="230" width="560" height="30"/>
+                                <state key="normal" title="登录">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="showPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zb-1H-q5R"/>
-                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="m5n-PV-6zy" secondAttribute="centerY" id="Cdi-Dt-7CP"/>
-                            <constraint firstAttribute="centerX" secondItem="m5n-PV-6zy" secondAttribute="centerX" id="ESn-3t-vmR"/>
+                            <constraint firstAttribute="trailing" secondItem="9od-B8-bgj" secondAttribute="trailing" constant="20" id="66L-Y3-rfw"/>
+                            <constraint firstItem="9od-B8-bgj" firstAttribute="leading" secondItem="4GO-Oa-I5B" secondAttribute="leading" constant="20" id="d5h-J5-y6M"/>
+                            <constraint firstItem="vTV-8I-m23" firstAttribute="leading" secondItem="4GO-Oa-I5B" secondAttribute="leading" constant="20" id="gfd-ul-Mev"/>
+                            <constraint firstAttribute="trailing" secondItem="vTV-8I-m23" secondAttribute="trailing" constant="20" id="kBD-wp-3Tb"/>
+                            <constraint firstItem="9od-B8-bgj" firstAttribute="top" secondItem="4GO-Oa-I5B" secondAttribute="top" constant="100" id="rMz-Eg-KAH"/>
+                            <constraint firstItem="vTV-8I-m23" firstAttribute="top" secondItem="9od-B8-bgj" secondAttribute="bottom" constant="30" id="uPg-Lc-aUB"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="m5n-PV-6zy" id="gXM-Ls-IAC"/>
+                        <outlet property="loginTableView" destination="9od-B8-bgj" id="bWu-wT-96W"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="re9-DU-FCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="1024"/>
         </scene>
     </scenes>
 </document>
