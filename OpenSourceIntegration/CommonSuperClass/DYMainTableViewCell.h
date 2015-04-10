@@ -10,4 +10,11 @@
 
 @interface DYMainTableViewCell : UITableViewCell
 
+@property (nonatomic) CGFloat leftInsets;
+@property (nonatomic) BOOL firstCell;
+@property (nonatomic) BOOL lastCell;
+
+@property (strong, nonatomic) UIView *sepline;
+@property (strong, nonatomic) UIView *topSepline;
+
 @end

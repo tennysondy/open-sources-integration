@@ -80,9 +80,11 @@ static NSString *kCellIdentifier = @"InputTextField";
     if (indexPath.row == 0) {
         self.username = cell.inputTextField;
         self.username.placeholder = @"请输入用户名";
+        cell.leftInsets = 75.0f;
     } else {
         self.password = cell.inputTextField;
         self.password.placeholder = @"请输入密码";
+        cell.sepline.hidden = YES;
     }
     
     return cell;
