@@ -74,7 +74,9 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTV-8I-m23" userLabel="登录">
                                 <rect key="frame" x="20" y="230" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="登录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -90,6 +92,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginBtn" destination="vTV-8I-m23" id="pUT-L6-pcz"/>
                         <outlet property="loginTableView" destination="9od-B8-bgj" id="bWu-wT-96W"/>
                     </connections>
                 </viewController>

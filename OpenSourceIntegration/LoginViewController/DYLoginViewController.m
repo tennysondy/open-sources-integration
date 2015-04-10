@@ -17,6 +17,9 @@ static NSString *kCellIdentifier = @"InputTextField";
 
 @property (weak, nonatomic) IBOutlet UITableView *loginTableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+
+
 @property (strong, nonatomic) UITextField *username;
 @property (strong, nonatomic) UITextField *password;
 
@@ -32,8 +35,28 @@ static NSString *kCellIdentifier = @"InputTextField";
     self.loginTableView.layer.cornerRadius = 5.0f;
     self.loginTableView.clipsToBounds = YES;
     
+    self.loginBtn.layer.cornerRadius = 2.0f;
+    self.loginBtn.clipsToBounds = YES;
     
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     
+    RACSignal *validUsernameSignal = [self.username.rac_textSignal map:^id (NSString *text) {
+        BOOL flag = text.length > 0;
+        return @(flag);
+    }];
+    
+    RACSignal *validPasswordSignal = [self.password.rac_textSignal map:^id (NSString *text) {
+        BOOL flag = text.length > 0;
+        return @(flag);
+    }];
+    RAC(self.loginBtn, backgroundColor) = [RACSignal combineLatest:@[validUsernameSignal, validPasswordSignal] reduce:^id (NSNumber *usernameValid, NSNumber *passwordValid) {
+        BOOL flag = [usernameValid boolValue] && [passwordValid boolValue];
+        return flag ? [UIColor blueColor] : [UIColor grayColor];
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -73,19 +96,16 @@ static NSString *kCellIdentifier = @"InputTextField";
 - (void)setUsername:(UITextField *)username
 {
     _username = username;
-    [self.username.rac_textSignal subscribeNext:^(id x) {
-        NSLog(@"%@", x);
-    }];
+    
     
 }
+
 
 - (void)setPassword:(UITextField *)password
 {
     _password = password;
     _password.secureTextEntry = YES;
-    [self.password.rac_textSignal subscribeNext:^(id x) {
-        NSLog(@"%@", x);
-    }];
+    
 }
 
 
