@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F44B2E41AE406F40026FB06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2E31AE406F40026FB06 /* Foundation.framework */; };
+		6F44B2E61AE406FB0026FB06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2E51AE406FB0026FB06 /* UIKit.framework */; };
+		6F44B2E81AE4070E0026FB06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2E71AE4070E0026FB06 /* CoreGraphics.framework */; };
+		6F44B2ED1AE408AE0026FB06 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2EC1AE408AE0026FB06 /* AssetsLibrary.framework */; };
+		6F44B2F11AE40ED60026FB06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F01AE40ED60026FB06 /* AVFoundation.framework */; };
+		6F44B2F31AE40EE10026FB06 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F21AE40EE10026FB06 /* Accelerate.framework */; };
+		6F44B2FB1AE40F3E0026FB06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2FA1AE40F3E0026FB06 /* QuartzCore.framework */; };
+		6F44B2FC1AE40F770026FB06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F61AE40F220026FB06 /* CoreMedia.framework */; };
+		6F44B2FD1AE40FA80026FB06 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F41AE40F140026FB06 /* CoreImage.framework */; };
+		6F44B2FE1AE40FC60026FB06 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F81AE40F2C0026FB06 /* CoreVideo.framework */; };
 		6FB0DE781AD52B5A0027C955 /* DYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */; };
 		6FB0DE7B1AD52BB90027C955 /* DYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7A1AD52BB90027C955 /* DYLoginViewController.m */; };
 		6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */; };
 		6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */; };
+		6FB2DBBD1AE4A1B20066EB66 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB2DBBC1AE4A1B20066EB66 /* opencv2.framework */; };
 		6FD6F8541AA55C0A001F012B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8531AA55C0A001F012B /* main.m */; };
 		6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8561AA55C0A001F012B /* AppDelegate.m */; };
 		6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8581AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld */; };
@@ -18,6 +29,8 @@
 		6FD6F8621AA55C0A001F012B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F8611AA55C0A001F012B /* Images.xcassets */; };
 		6FD6F8651AA55C0A001F012B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F8631AA55C0A001F012B /* LaunchScreen.xib */; };
 		6FD6F8711AA55C0A001F012B /* OpenSourceIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8701AA55C0A001F012B /* OpenSourceIntegrationTests.m */; };
+		6FD929981B281E8000F90100 /* DYCustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */; };
+		6FFDEF2F1AF8637D002FA44B /* DYImageIdentifierViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FFDEF2E1AF8637D002FA44B /* DYImageIdentifierViewController.mm */; };
 		DCBE2D72A461CCBD26C54B2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F97E770ACD492C2BEF1CAF21 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +47,17 @@
 /* Begin PBXFileReference section */
 		2042A41782B3BF04DE63489A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		329C8D9F2B9AFEFB3C76055A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6F44B2E31AE406F40026FB06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F44B2E51AE406FB0026FB06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F44B2E71AE4070E0026FB06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F44B2EC1AE408AE0026FB06 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6F44B2F01AE40ED60026FB06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6F44B2F21AE40EE10026FB06 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6F44B2F41AE40F140026FB06 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6F44B2F61AE40F220026FB06 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6F44B2F81AE40F2C0026FB06 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6F44B2FA1AE40F3E0026FB06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6F44B2FF1AE40FFD0026FB06 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6FB0DE761AD52B5A0027C955 /* DYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYMainViewController.h; path = CommonSuperClass/DYMainViewController.h; sourceTree = "<group>"; };
 		6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYMainViewController.m; path = CommonSuperClass/DYMainViewController.m; sourceTree = "<group>"; };
 		6FB0DE791AD52BB90027C955 /* DYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLoginViewController.h; path = LoginViewController/DYLoginViewController.h; sourceTree = "<group>"; };
@@ -42,6 +66,7 @@
 		6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYMainTableViewCell.m; path = CommonSuperClass/DYMainTableViewCell.m; sourceTree = "<group>"; };
 		6FB0DE811AD55CE80027C955 /* DYLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLoginTableViewCell.h; path = LoginViewController/DYLoginTableViewCell.h; sourceTree = "<group>"; };
 		6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYLoginTableViewCell.m; path = LoginViewController/DYLoginTableViewCell.m; sourceTree = "<group>"; };
+		6FB2DBBC1AE4A1B20066EB66 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = OpenSourceIntegration/opencv2.framework; sourceTree = "<group>"; };
 		6FD6F84E1AA55C0A001F012B /* OpenSourceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSourceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6F8521AA55C0A001F012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD6F8531AA55C0A001F012B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +79,10 @@
 		6FD6F86A1AA55C0A001F012B /* OpenSourceIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSourceIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6F86F1AA55C0A001F012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD6F8701AA55C0A001F012B /* OpenSourceIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSourceIntegrationTests.m; sourceTree = "<group>"; };
+		6FD929961B281E8000F90100 /* DYCustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCustomCameraViewController.h; sourceTree = "<group>"; };
+		6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCustomCameraViewController.m; sourceTree = "<group>"; };
+		6FFDEF2D1AF8637D002FA44B /* DYImageIdentifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYImageIdentifierViewController.h; path = ImageIdentifier/DYImageIdentifierViewController.h; sourceTree = "<group>"; };
+		6FFDEF2E1AF8637D002FA44B /* DYImageIdentifierViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DYImageIdentifierViewController.mm; path = ImageIdentifier/DYImageIdentifierViewController.mm; sourceTree = "<group>"; };
 		F97E770ACD492C2BEF1CAF21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,6 +91,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB2DBBD1AE4A1B20066EB66 /* opencv2.framework in Frameworks */,
+				6F44B2FE1AE40FC60026FB06 /* CoreVideo.framework in Frameworks */,
+				6F44B2FD1AE40FA80026FB06 /* CoreImage.framework in Frameworks */,
+				6F44B2FC1AE40F770026FB06 /* CoreMedia.framework in Frameworks */,
+				6F44B2FB1AE40F3E0026FB06 /* QuartzCore.framework in Frameworks */,
+				6F44B2F31AE40EE10026FB06 /* Accelerate.framework in Frameworks */,
+				6F44B2F11AE40ED60026FB06 /* AVFoundation.framework in Frameworks */,
+				6F44B2ED1AE408AE0026FB06 /* AssetsLibrary.framework in Frameworks */,
+				6F44B2E81AE4070E0026FB06 /* CoreGraphics.framework in Frameworks */,
+				6F44B2E61AE406FB0026FB06 /* UIKit.framework in Frameworks */,
+				6F44B2E41AE406F40026FB06 /* Foundation.framework in Frameworks */,
 				DCBE2D72A461CCBD26C54B2C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +119,18 @@
 		096F3CEB9BD7DF4E832138EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FB2DBBC1AE4A1B20066EB66 /* opencv2.framework */,
+				6F44B2FF1AE40FFD0026FB06 /* ImageIO.framework */,
+				6F44B2FA1AE40F3E0026FB06 /* QuartzCore.framework */,
+				6F44B2F81AE40F2C0026FB06 /* CoreVideo.framework */,
+				6F44B2F61AE40F220026FB06 /* CoreMedia.framework */,
+				6F44B2F41AE40F140026FB06 /* CoreImage.framework */,
+				6F44B2F21AE40EE10026FB06 /* Accelerate.framework */,
+				6F44B2F01AE40ED60026FB06 /* AVFoundation.framework */,
+				6F44B2EC1AE408AE0026FB06 /* AssetsLibrary.framework */,
+				6F44B2E71AE4070E0026FB06 /* CoreGraphics.framework */,
+				6F44B2E51AE406FB0026FB06 /* UIKit.framework */,
+				6F44B2E31AE406F40026FB06 /* Foundation.framework */,
 				F97E770ACD492C2BEF1CAF21 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -142,6 +194,8 @@
 				6FD6F8561AA55C0A001F012B /* AppDelegate.m */,
 				6FB0DE7D1AD55C550027C955 /* CommonSuperClass */,
 				6FB0DE7C1AD55C440027C955 /* LoginView */,
+				6FD929921B281C9000F90100 /* CustomCamera */,
+				6FFDEF301AF8638F002FA44B /* ImageIdentifier */,
 				6FD6F85E1AA55C0A001F012B /* Main.storyboard */,
 				6FD6F8611AA55C0A001F012B /* Images.xcassets */,
 				6FD6F8631AA55C0A001F012B /* LaunchScreen.xib */,
@@ -175,6 +229,24 @@
 				6FD6F86F1AA55C0A001F012B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FD929921B281C9000F90100 /* CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				6FD929961B281E8000F90100 /* DYCustomCameraViewController.h */,
+				6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */,
+			);
+			name = CustomCamera;
+			sourceTree = "<group>";
+		};
+		6FFDEF301AF8638F002FA44B /* ImageIdentifier */ = {
+			isa = PBXGroup;
+			children = (
+				6FFDEF2D1AF8637D002FA44B /* DYImageIdentifierViewController.h */,
+				6FFDEF2E1AF8637D002FA44B /* DYImageIdentifierViewController.mm */,
+			);
+			name = ImageIdentifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +386,9 @@
 			files = (
 				6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */,
 				6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */,
+				6FFDEF2F1AF8637D002FA44B /* DYImageIdentifierViewController.mm in Sources */,
 				6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */,
+				6FD929981B281E8000F90100 /* DYCustomCameraViewController.m in Sources */,
 				6FD6F8541AA55C0A001F012B /* main.m in Sources */,
 				6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */,
 				6FB0DE781AD52B5A0027C955 /* DYMainViewController.m in Sources */,
@@ -443,10 +517,15 @@
 			baseConfigurationReference = 2042A41782B3BF04DE63489A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSourceIntegration",
+				);
 				INFOPLIST_FILE = OpenSourceIntegration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -455,10 +534,15 @@
 			baseConfigurationReference = 329C8D9F2B9AFEFB3C76055A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenSourceIntegration",
+				);
 				INFOPLIST_FILE = OpenSourceIntegration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

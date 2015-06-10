@@ -15,4 +15,9 @@
     [super awakeFromNib];
 }
 
+- (void)drawRect:(CGRect)rect
+{
+
+}
+
 @end

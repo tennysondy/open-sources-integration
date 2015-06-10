@@ -15,10 +15,14 @@ static NSString *kCellIdentifier = @"InputTextField";
 
 @interface DYLoginViewController () <UITableViewDataSource, UITableViewDelegate>
 
+
+@property (weak, nonatomic) IBOutlet UIView *flipView;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+
 @property (weak, nonatomic) IBOutlet UITableView *loginTableView;
 
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
-
 
 @property (strong, nonatomic) UITextField *username;
 @property (strong, nonatomic) UITextField *password;
@@ -26,6 +30,16 @@ static NSString *kCellIdentifier = @"InputTextField";
 @end
 
 @implementation DYLoginViewController
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.words = @"没啥问题";
+    }
+    
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -37,26 +51,33 @@ static NSString *kCellIdentifier = @"InputTextField";
     
     self.loginBtn.layer.cornerRadius = 2.0f;
     self.loginBtn.clipsToBounds = YES;
-    
+    __block NSInteger i = 0;
+    self.label2.hidden = YES;
+    @weakify(self);
+    [[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self);
+        if (i%2 == 0) {
+            [UIView transitionFromView:self.label1
+                                toView:self.label2
+                              duration:1
+                               options:UIViewAnimationOptionTransitionCurlDown | UIViewAnimationOptionShowHideTransitionViews
+                            completion:nil];
+        } else {
+            [UIView transitionFromView:self.label2
+                                toView:self.label1
+                              duration:1
+                               options:UIViewAnimationOptionTransitionCurlUp | UIViewAnimationOptionShowHideTransitionViews
+                            completion:nil];
+        }
+        i++;
+        
+    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    RACSignal *validUsernameSignal = [self.username.rac_textSignal map:^id (NSString *text) {
-        BOOL flag = text.length > 0;
-        return @(flag);
-    }];
-    
-    RACSignal *validPasswordSignal = [self.password.rac_textSignal map:^id (NSString *text) {
-        BOOL flag = text.length > 0;
-        return @(flag);
-    }];
-    RAC(self.loginBtn, backgroundColor) = [RACSignal combineLatest:@[validUsernameSignal, validPasswordSignal] reduce:^id (NSNumber *usernameValid, NSNumber *passwordValid) {
-        BOOL flag = [usernameValid boolValue] && [passwordValid boolValue];
-        return flag ? [UIColor blueColor] : [UIColor grayColor];
-    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

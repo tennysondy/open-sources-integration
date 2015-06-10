@@ -10,4 +10,7 @@
 
 @interface DYLoginViewController : DYMainViewController
 
+@property (strong, nonatomic) NSString *words;
+
+
 @end
