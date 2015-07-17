@@ -10,6 +10,5 @@
 
 @interface DYCustomCameraViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *takePhotosBtn;
 
 @end

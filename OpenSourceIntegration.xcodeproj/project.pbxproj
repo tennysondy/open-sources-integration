@@ -21,6 +21,7 @@
 		6FB0DE7B1AD52BB90027C955 /* DYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7A1AD52BB90027C955 /* DYLoginViewController.m */; };
 		6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */; };
 		6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */; };
+		6FB28DBF1B2EB081000B67D8 /* DYTakePhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB28DBE1B2EB081000B67D8 /* DYTakePhotosViewController.m */; };
 		6FB2DBBD1AE4A1B20066EB66 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB2DBBC1AE4A1B20066EB66 /* opencv2.framework */; };
 		6FD6F8541AA55C0A001F012B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8531AA55C0A001F012B /* main.m */; };
 		6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8561AA55C0A001F012B /* AppDelegate.m */; };
@@ -66,6 +67,8 @@
 		6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYMainTableViewCell.m; path = CommonSuperClass/DYMainTableViewCell.m; sourceTree = "<group>"; };
 		6FB0DE811AD55CE80027C955 /* DYLoginTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLoginTableViewCell.h; path = LoginViewController/DYLoginTableViewCell.h; sourceTree = "<group>"; };
 		6FB0DE821AD55CE80027C955 /* DYLoginTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYLoginTableViewCell.m; path = LoginViewController/DYLoginTableViewCell.m; sourceTree = "<group>"; };
+		6FB28DBD1B2EB081000B67D8 /* DYTakePhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTakePhotosViewController.h; sourceTree = "<group>"; };
+		6FB28DBE1B2EB081000B67D8 /* DYTakePhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTakePhotosViewController.m; sourceTree = "<group>"; };
 		6FB2DBBC1AE4A1B20066EB66 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = OpenSourceIntegration/opencv2.framework; sourceTree = "<group>"; };
 		6FD6F84E1AA55C0A001F012B /* OpenSourceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSourceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6F8521AA55C0A001F012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 		6FD929921B281C9000F90100 /* CustomCamera */ = {
 			isa = PBXGroup;
 			children = (
+				6FB28DBD1B2EB081000B67D8 /* DYTakePhotosViewController.h */,
+				6FB28DBE1B2EB081000B67D8 /* DYTakePhotosViewController.m */,
 				6FD929961B281E8000F90100 /* DYCustomCameraViewController.h */,
 				6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */,
 			);
@@ -385,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */,
+				6FB28DBF1B2EB081000B67D8 /* DYTakePhotosViewController.m in Sources */,
 				6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */,
 				6FFDEF2F1AF8637D002FA44B /* DYImageIdentifierViewController.mm in Sources */,
 				6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */,

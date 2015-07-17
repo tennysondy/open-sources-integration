@@ -56,20 +56,11 @@ static NSString *kCellIdentifier = @"InputTextField";
     @weakify(self);
     [[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self);
-        if (i%2 == 0) {
-            [UIView transitionFromView:self.label1
-                                toView:self.label2
-                              duration:1
-                               options:UIViewAnimationOptionTransitionCurlDown | UIViewAnimationOptionShowHideTransitionViews
-                            completion:nil];
-        } else {
-            [UIView transitionFromView:self.label2
-                                toView:self.label1
-                              duration:1
-                               options:UIViewAnimationOptionTransitionCurlUp | UIViewAnimationOptionShowHideTransitionViews
-                            completion:nil];
-        }
-        i++;
+        UIViewController *vc = [UIViewController new];
+        [self presentViewController:vc animated:YES completion:^{
+            @strongify(self);
+            NSLog(@"window:%@", self.view.window);
+        }];
         
     }];
 }

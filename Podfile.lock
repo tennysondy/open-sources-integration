@@ -21,6 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Masonry (0.6.1)
+  - PBJVision (0.4.2)
   - pop (1.0.7)
   - ReactiveCocoa (2.4.7):
     - ReactiveCocoa/UI (= 2.4.7)
@@ -34,6 +35,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
   - Masonry (~> 0.6.1)
+  - PBJVision
   - pop (~> 1.0.7)
   - ReactiveCocoa (~> 2.4.7)
   - WYPopoverController (~> 0.3.7)
@@ -41,8 +43,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 10e85a00bb0f475124e4ff2677bf15693b2c1523
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  PBJVision: fe43c9a58bb1c1277d16fd802fa836d25e034a45
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
   WYPopoverController: ebefa50c477bdbbd9dc992dfdffafa168c4484eb
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.37.2
