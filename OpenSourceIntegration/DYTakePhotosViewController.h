@@ -11,5 +11,7 @@
 @interface DYTakePhotosViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *takePhotosBtn;
+@property (weak, nonatomic) IBOutlet UIButton *processImageBtn;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

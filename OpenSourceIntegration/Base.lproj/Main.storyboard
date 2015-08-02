@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lWx-1L-H35">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jJ0-3s-heh">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -149,53 +149,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-nO-MIe">
-                                <rect key="frame" x="20" y="312" width="560" height="44"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="536" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="JRQ-mb-BG7"/>
+                                    <constraint firstAttribute="width" constant="150" id="uDH-q7-bK0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="拍摄照片">
                                     <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="fdM-rR-yyO" kind="presentation" id="1VL-yj-oNf"/>
-                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Scg-lb-vlo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="516"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVn-Qr-J4x">
+                                <rect key="frame" x="430" y="536" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="处理照片">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="d3l-nO-MIe" secondAttribute="trailing" constant="20" id="JZb-0k-LoW"/>
+                            <constraint firstAttribute="trailing" secondItem="Scg-lb-vlo" secondAttribute="trailing" id="4Bt-dY-qlS"/>
+                            <constraint firstItem="aVn-Qr-J4x" firstAttribute="height" secondItem="d3l-nO-MIe" secondAttribute="height" id="Cx3-Su-I5N"/>
+                            <constraint firstItem="Scg-lb-vlo" firstAttribute="top" secondItem="Reg-Qg-nf5" secondAttribute="top" id="DRv-2I-zwA"/>
+                            <constraint firstItem="d3l-nO-MIe" firstAttribute="top" secondItem="Scg-lb-vlo" secondAttribute="bottom" constant="20" id="HQ1-aZ-tla"/>
+                            <constraint firstAttribute="trailing" secondItem="d3l-nO-MIe" secondAttribute="trailing" constant="200" id="JZb-0k-LoW"/>
+                            <constraint firstItem="Scg-lb-vlo" firstAttribute="leading" secondItem="Reg-Qg-nf5" secondAttribute="leading" id="KaO-oM-imi"/>
                             <constraint firstItem="d3l-nO-MIe" firstAttribute="leading" secondItem="Reg-Qg-nf5" secondAttribute="leading" constant="20" id="Tpn-iV-QfB"/>
-                            <constraint firstItem="d3l-nO-MIe" firstAttribute="top" secondItem="WyL-fE-0QB" secondAttribute="bottom" constant="292" id="beQ-2A-5JQ"/>
+                            <constraint firstItem="aVn-Qr-J4x" firstAttribute="width" secondItem="d3l-nO-MIe" secondAttribute="width" id="h7P-nM-Aq2"/>
+                            <constraint firstAttribute="bottom" secondItem="d3l-nO-MIe" secondAttribute="bottom" constant="20" id="m6R-Jp-r6O"/>
+                            <constraint firstAttribute="trailing" secondItem="aVn-Qr-J4x" secondAttribute="trailing" constant="20" id="vc5-nM-jMk"/>
+                            <constraint firstItem="aVn-Qr-J4x" firstAttribute="centerY" secondItem="d3l-nO-MIe" secondAttribute="centerY" id="zGz-Pa-P9S"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JZb-0k-LoW"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="v9W-8V-sqY"/>
                     <connections>
+                        <outlet property="imageView" destination="Scg-lb-vlo" id="QiM-Pw-BS4"/>
+                        <outlet property="processImageBtn" destination="aVn-Qr-J4x" id="q3w-Is-tgb"/>
                         <outlet property="takePhotosBtn" destination="d3l-nO-MIe" id="hF8-gs-dfZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmI-mu-PPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="1718"/>
+            <point key="canvasLocation" x="1057" y="1718"/>
         </scene>
-        <!--Custom Camera View Controller-->
-        <scene sceneID="Hya-xk-jOK">
+        <!--Image Processing View Controller-->
+        <scene sceneID="kUu-gq-QDM">
             <objects>
-                <viewController id="fdM-rR-yyO" customClass="DYCustomCameraViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DYImageProcessingViewController" id="P4m-Rn-SOn" customClass="DYImageProcessingViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ydx-uT-6dJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="7ig-jP-PiH"/>
+                        <viewControllerLayoutGuide type="top" id="0rd-kf-gRk"/>
+                        <viewControllerLayoutGuide type="bottom" id="oEB-xO-vnK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="phl-tA-khb">
+                    <view key="view" contentMode="scaleToFill" id="0FW-vL-5Ko">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lDl-ms-D0I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lDl-ms-D0I" firstAttribute="leading" secondItem="0FW-vL-5Ko" secondAttribute="leading" id="9pR-C0-c4S"/>
+                            <constraint firstAttribute="trailing" secondItem="lDl-ms-D0I" secondAttribute="trailing" id="JkW-BE-Xht"/>
+                            <constraint firstItem="lDl-ms-D0I" firstAttribute="top" secondItem="0FW-vL-5Ko" secondAttribute="top" id="pw8-5O-t0B"/>
+                            <constraint firstAttribute="bottom" secondItem="lDl-ms-D0I" secondAttribute="bottom" id="yHM-28-y7x"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="lDl-ms-D0I" id="o0n-MG-QB7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Esw-ti-C1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QG5-wj-C6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="1718"/>
+            <point key="canvasLocation" x="1804" y="1718"/>
         </scene>
         <!--Image Identifier View Controller-->
         <scene sceneID="w00-0l-gQc">
@@ -241,6 +281,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5Q-AW-eLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="2404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Cx-by-d3c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jJ0-3s-heh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHU-b3-BQq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rD2-Jr-1OY" kind="relationship" relationship="rootViewController" id="Wms-OF-1IK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x23-Jp-xSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="1718"/>
         </scene>
     </scenes>
 </document>

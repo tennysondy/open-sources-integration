@@ -17,6 +17,7 @@
 		6F44B2FC1AE40F770026FB06 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F61AE40F220026FB06 /* CoreMedia.framework */; };
 		6F44B2FD1AE40FA80026FB06 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F41AE40F140026FB06 /* CoreImage.framework */; };
 		6F44B2FE1AE40FC60026FB06 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F44B2F81AE40F2C0026FB06 /* CoreVideo.framework */; };
+		6F816DCE1B6E6B160074D00B /* DYImageProcessingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F816DCD1B6E6B160074D00B /* DYImageProcessingViewController.mm */; };
 		6FB0DE781AD52B5A0027C955 /* DYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */; };
 		6FB0DE7B1AD52BB90027C955 /* DYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7A1AD52BB90027C955 /* DYLoginViewController.m */; };
 		6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB0DE7F1AD55C860027C955 /* DYMainTableViewCell.m */; };
@@ -30,7 +31,6 @@
 		6FD6F8621AA55C0A001F012B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F8611AA55C0A001F012B /* Images.xcassets */; };
 		6FD6F8651AA55C0A001F012B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6F8631AA55C0A001F012B /* LaunchScreen.xib */; };
 		6FD6F8711AA55C0A001F012B /* OpenSourceIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6F8701AA55C0A001F012B /* OpenSourceIntegrationTests.m */; };
-		6FD929981B281E8000F90100 /* DYCustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */; };
 		6FFDEF2F1AF8637D002FA44B /* DYImageIdentifierViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6FFDEF2E1AF8637D002FA44B /* DYImageIdentifierViewController.mm */; };
 		DCBE2D72A461CCBD26C54B2C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F97E770ACD492C2BEF1CAF21 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -59,6 +59,8 @@
 		6F44B2F81AE40F2C0026FB06 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		6F44B2FA1AE40F3E0026FB06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6F44B2FF1AE40FFD0026FB06 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6F816DCC1B6E6B160074D00B /* DYImageProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYImageProcessingViewController.h; sourceTree = "<group>"; };
+		6F816DCD1B6E6B160074D00B /* DYImageProcessingViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYImageProcessingViewController.mm; sourceTree = "<group>"; };
 		6FB0DE761AD52B5A0027C955 /* DYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYMainViewController.h; path = CommonSuperClass/DYMainViewController.h; sourceTree = "<group>"; };
 		6FB0DE771AD52B5A0027C955 /* DYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DYMainViewController.m; path = CommonSuperClass/DYMainViewController.m; sourceTree = "<group>"; };
 		6FB0DE791AD52BB90027C955 /* DYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYLoginViewController.h; path = LoginViewController/DYLoginViewController.h; sourceTree = "<group>"; };
@@ -82,8 +84,6 @@
 		6FD6F86A1AA55C0A001F012B /* OpenSourceIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSourceIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD6F86F1AA55C0A001F012B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FD6F8701AA55C0A001F012B /* OpenSourceIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSourceIntegrationTests.m; sourceTree = "<group>"; };
-		6FD929961B281E8000F90100 /* DYCustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCustomCameraViewController.h; sourceTree = "<group>"; };
-		6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYCustomCameraViewController.m; sourceTree = "<group>"; };
 		6FFDEF2D1AF8637D002FA44B /* DYImageIdentifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DYImageIdentifierViewController.h; path = ImageIdentifier/DYImageIdentifierViewController.h; sourceTree = "<group>"; };
 		6FFDEF2E1AF8637D002FA44B /* DYImageIdentifierViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DYImageIdentifierViewController.mm; path = ImageIdentifier/DYImageIdentifierViewController.mm; sourceTree = "<group>"; };
 		F97E770ACD492C2BEF1CAF21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,8 +239,8 @@
 			children = (
 				6FB28DBD1B2EB081000B67D8 /* DYTakePhotosViewController.h */,
 				6FB28DBE1B2EB081000B67D8 /* DYTakePhotosViewController.m */,
-				6FD929961B281E8000F90100 /* DYCustomCameraViewController.h */,
-				6FD929971B281E8000F90100 /* DYCustomCameraViewController.m */,
+				6F816DCC1B6E6B160074D00B /* DYImageProcessingViewController.h */,
+				6F816DCD1B6E6B160074D00B /* DYImageProcessingViewController.mm */,
 			);
 			name = CustomCamera;
 			sourceTree = "<group>";
@@ -305,6 +305,7 @@
 				TargetAttributes = {
 					6FD6F84D1AA55C0A001F012B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7NY77NZ953;
 					};
 					6FD6F8691AA55C0A001F012B = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -391,10 +392,10 @@
 			files = (
 				6FD6F8571AA55C0A001F012B /* AppDelegate.m in Sources */,
 				6FB28DBF1B2EB081000B67D8 /* DYTakePhotosViewController.m in Sources */,
+				6F816DCE1B6E6B160074D00B /* DYImageProcessingViewController.mm in Sources */,
 				6FB0DE801AD55C860027C955 /* DYMainTableViewCell.m in Sources */,
 				6FFDEF2F1AF8637D002FA44B /* DYImageIdentifierViewController.mm in Sources */,
 				6FB0DE831AD55CE80027C955 /* DYLoginTableViewCell.m in Sources */,
-				6FD929981B281E8000F90100 /* DYCustomCameraViewController.m in Sources */,
 				6FD6F8541AA55C0A001F012B /* main.m in Sources */,
 				6FD6F85A1AA55C0A001F012B /* OpenSourceIntegration.xcdatamodeld in Sources */,
 				6FB0DE781AD52B5A0027C955 /* DYMainViewController.m in Sources */,
@@ -523,6 +524,7 @@
 			baseConfigurationReference = 2042A41782B3BF04DE63489A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenSourceIntegration",
@@ -540,6 +542,7 @@
 			baseConfigurationReference = 329C8D9F2B9AFEFB3C76055A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenSourceIntegration",

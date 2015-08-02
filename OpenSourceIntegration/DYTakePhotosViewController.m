@@ -8,8 +8,11 @@
 
 #import "DYTakePhotosViewController.h"
 #import "ReactiveCocoa.h"
+#import "DYImageProcessingViewController.h"
 
-@interface DYTakePhotosViewController ()
+@interface DYTakePhotosViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (strong, nonatomic) UIImage *image;
 
 @end
 
@@ -17,19 +20,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.takePhotosBtn addTarget:self action:@selector(tap0) forControlEvents:UIControlEventTouchUpInside];
-    [self.takePhotosBtn addTarget:self action:@selector(tap0) forControlEvents:UIControlEventTouchUpInside];
+    [self.takePhotosBtn addTarget:self action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
+    [self.processImageBtn addTarget:self action:@selector(processPhoto:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)tap0
+- (void)takePhoto:(UIButton *)button
 {
-    NSLog(@"<<<<<<<<<<<<<<<<<<<<<1111");
+    UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;   // 设置委托
+    imagePickerController.sourceType = sourceType;
+    imagePickerController.allowsEditing = YES;
+    [self presentViewController:imagePickerController animated:YES completion:nil];  //需要以模态的形式展示
 }
 
-- (void)tap1
+
+//完成拍照
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    NSLog(@"2222");
+    [picker dismissViewControllerAnimated:YES completion:^{}];
+    self.image = [info objectForKey:UIImagePickerControllerEditedImage];
+    if (self.image == nil)
+        self.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    self.imageView.image = self.image;
+}
+//用户取消拍照
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)processPhoto:(UIButton *)button
+{
+    DYImageProcessingViewController *controller = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DYImageProcessingViewController"];
+    controller.originImage = self.image;
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

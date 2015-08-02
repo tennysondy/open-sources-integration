@@ -1,8 +1,8 @@
 //
-//  DYImageIdentifierViewController.m
+//  DYImageProcessingViewController.m
 //  OpenSourceIntegration
 //
-//  Created by 丁 一 on 15/5/5.
+//  Created by 丁 一 on 15/8/2.
 //  Copyright (c) 2015年 Ding Yi. All rights reserved.
 //
 
@@ -10,35 +10,20 @@
 #import <opencv2/videoio/cap_ios.h>
 #import <opencv2/imgproc/imgproc_c.h>
 #include <opencv2/imgproc/imgproc.hpp>
-#import "DYImageIdentifierViewController.h"
-#import "ReactiveCocoa.h"
+#import "DYImageProcessingViewController.h"
 
 using namespace std;
 using namespace cv;
 
-@interface DYImageIdentifierViewController () <CvVideoCameraDelegate>
-
-@property (strong, nonatomic) CvVideoCamera *videoCamera;
+@interface DYImageProcessingViewController ()
 
 @end
 
-@implementation DYImageIdentifierViewController
+@implementation DYImageProcessingViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.imageView];
-    self.videoCamera.delegate = self;
-    self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
-    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
-    self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
-    self.videoCamera.defaultFPS = 30;
-//    self.videoCamera.grayscale = NO;
-    self.ctrlBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        [self.videoCamera start];
-        return [RACSignal empty];
-    }];
+    // Do any additional setup after loading the view.
 }
 
 - (void)processImage:(Mat&)image;
@@ -145,8 +130,6 @@ using namespace cv;
         }
     }
 }
-
-
 
 
 @end
